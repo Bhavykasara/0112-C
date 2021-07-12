@@ -1,0 +1,49 @@
+<html>
+    <head>
+        <title>Image Identification app 3.0</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+    <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.js"></script>
+    <script src="main.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Special+Elite&display=swap" rel="stylesheet">
+    </head>
+    <body style="background-color: rgb(0, 0, 0); color: white;font-family: 'Special Elite', cursive;">
+        <center>
+            <div style="width:80%; margin-left:10%;margin-bottom: 5%;background-color: white;color:black;" class="header_div col-xs-12">
+                <h1 style="width:100%;">Image Identification app 3.0</h1><img style="width:10%; border-radius: 10px;" src="https://thumbs.gfycat.com/AngelicShoddyChafer-size_restricted.gif">
+            </div>
+            <div class="col-sm-4 col-xs-10 main_div" style="width:40%;border: white 1px solid;background-color: white;color:black; margin-left: 10%;">
+                <label>
+                    Webcam View-
+                </label>
+                <hr>
+                <div style="height: 40%;width: 100%;" id="camera"></div>
+                <hr>
+                <button onclick="webstart()" class="btn btn-success">Take snapshot</button>
+            </div>
+            <div class="col-sm-4 col-xs-10 main_div" style="width:40%;border: white 1px solid;background-color: white;color:black; margin-left: 5%;">
+                <label>
+                    Snapshot-
+                </label>
+                <hr>
+                <div id="result" style="height: 40%;width: 4%;margin-right:10%"></div>
+                <hr>
+                <button onclick="check()" class="btn btn-warning">Identify Image</button>
+            </div><br>
+            <br style="margin-top: 78%;"><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+            <div>
+            <div class="footer_div col-xs-12" style="text-align: left;background-color: white;color: black;width: 50%;border-radius: 10px; margin-left: 5%; margin-top: 1%;margin-bottom: 5%;">
+                <h1 class="col-sm-6 col-xs-12"><img src="https://th.bing.com/th/id/R.b995cb8dcfb073fe134e6fcce884139b?rik=3E4AGWrs7i%2bWMw&riu=http%3a%2f%2fwww.iconninja.com%2ffiles%2f743%2f814%2f567%2flight-energy-hint-bulb-tip-icon.png&ehk=G7aXn613Uas0WFoBVMJssJu7Uq6SEsY5pGmZcipzzJQ%3d&risl=&pid=ImgRaw" style="border-radius: 10px;width: 25%;"><span id="ans"></span></h1>
+            </div>
+            <br><br>
+            <div class="copy_right_footer" style="position: fixed; margin-top: 15%;text-align: center;line-height: 1; background-color: rgb(165, 160, 160);color: black;width: 100%;padding: 0.5%;">
+                Made by: Bhavy Kasara
+            </div>
+        </div>
+        </center>
+    </body>
+</html>
